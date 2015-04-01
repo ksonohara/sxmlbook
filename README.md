@@ -1,7 +1,8 @@
-# [Mikan JS](http://www.expertsoftware-i.com/product/sxmlbook.php)
+# [sXMLBook](http://www.expertsoftware-i.com/product/sxmlbook.php)
 ###Simple XML Book framework.
 
-Simple XML Book framework..
+Simple XML Book framework.
+Use by XSLT.
 
 ##Quick start
 Now making...
