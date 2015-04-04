@@ -1,0 +1,1905 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="xslt/bootstrap/sxmlbook.xsl" type="text/xsl" ?>
+
+<!--DOCTYPE sxmlbook SYSTEM "sxmlbook.dtd"-->
+
+<sxmlbook version="0.0" lang="ja">
+	<!-- ================================================================================ -->
+	<info>
+		<title>sXMLBook</title>
+		<description>Simple XML Book  Version 0.3.0_0 ドキュメント</description>
+		<release>$Id: sxmlbook.xml 102 2014-10-22 19:11:19Z expertsoftware.i@gmail.com $</release>
+		<date>2015/04/05</date>
+		<company>Expert Software Inc.</company>
+		<homepage>http://www.expertsoftware-i.com/</homepage>
+		<copyright>Copyright (C) 2007-15 K.Sonohara All Right Reserved.</copyright>
+		<keywords>sxmlbook,xml,xslt</keywords>
+	</info>
+
+	<!-- ================================================================================ -->
+	<summary>
+		<title>sXMLBook 概要</title>
+		<description>sXMLBookとはXMLベースのドキュメントシステムです。</description>
+
+		<text>複雑なHTMLなどリッチテキストを記載することなくリファレンスなどを容易に作成できます。</text>
+		<text>単純なXMLで構成されているためプログラムからの生成・プログラムへの組み込みも容易です。</text>
+	</summary>
+
+	<!-- ================================================================================ -->
+	<index name="introduction">
+		<index name="summary"/>
+		<index name="caseby"/>
+		<index name="spec"/>
+		<index name="license"/>
+	</index>
+
+	<index name="release">
+		<index name="download"/>
+		<index name="changelog">
+			<index name="changelog_0_3_0_0"/>
+			<index name="changelog_0_2_1_5"/>
+			<index name="changelog_0_2_1_4"/>
+			<index name="changelog_0_2_1_3"/>
+			<index name="changelog_0_2_1_2"/>
+			<index name="changelog_0_2_1_1"/>
+			<index name="changelog_0_2_1_0"/>
+			<index name="changelog_0_2_0_2"/>
+			<index name="changelog_0_2_0_1"/>
+			<index name="changelog_0_2_0_0"/>
+			<index name="changelog_0_1_0_2"/>
+			<index name="changelog_0_1_0_1"/>
+			<index name="changelog_0_1_0_0"/>
+			<index name="changelog_0_0_1_0"/>
+			<index name="changelog_0_0_0_0"/>
+		</index>
+		<index name="bug"/>
+		<index name="add"/>
+	</index>
+
+	<index name="function">
+		<index name="tutorial">	</index>
+		<index name="sample">
+			<index name="sample_original"/>
+			<index name="sample_sxmlbook"/>
+		</index>
+		<index name="faq">	</index>
+	</index>
+
+	<index name="reference">
+		<index name="reference_xml">
+			<index name="reference_xml_element">
+				<index name="xml_account" />
+				<index name="xml_alert" />
+				<index name="xml_calender" />
+				<index name="xml_code" />
+				<index name="xml_column" />
+				<index name="xml_columns" />
+				<index name="xml_company" />
+				<index name="xml_copyright" />
+				<index name="xml_day" />
+				<index name="xml_days" />
+				<index name="xml_date" />
+				<index name="xml_description" />
+				<index name="xml_domain" />
+				<index name="xml_faq" />
+				<index name="xml_googlemap" />
+				<index name="xml_homepage" />
+				<index name="xml_id" />
+				<index name="xml_image" />
+				<index name="xml_index" />
+				<index name="xml_info" />
+				<index name="xml_icon" />
+				<index name="xml_item" />
+				<index name="xml_link" />
+				<index name="xml_links" />
+				<index name="xml_list" />
+				<index name="xml_height" />
+				<index name="xml_width" />
+				<index name="xml_map" />
+				<index name="xml_map" />
+				<index name="xml_mail" />
+				<index name="xml_media" />
+				<index name="xml_memo" />
+				<index name="xml_newline" />
+				<index name="xml_release" />
+				<!--index name="xml_ref_class" /-->
+				<index name="xml_ref_element" />
+				<index name="xml_element_child" />
+				<index name="xml_element_parent" />
+				<index name="xml_separator" />
+				<index name="xml_size" />
+				<index name="xml_site" />
+				<index name="xml_sxmlbook" />
+				<index name="xml_summary" />
+				<index name="xml_step" />
+				<index name="xml_table" />
+				<index name="xml_term" />
+				<index name="xml_termitem" />
+				<index name="xml_terms" />
+				<index name="xml_text" />
+				<index name="xml_thumbnail" />
+				<index name="xml_thumbnails" />
+				<index name="xml_title" />
+				<index name="xml_topic" />
+				<index name="xml_url" />
+				<index name="xml_value" />
+				<index name="xml_values" />
+				<index name="xml_warn" />
+				<index name="xml_panel" />
+			</index>
+			<index name="reference_xml_attribute">
+				<index name="xml_attr_child" />
+				<index name="xml_attr_version" />
+				<index name="xml_attr_elementtype" />
+				<index name="xml_attr_attributetype" />
+				<!--index name="xml_attr_classtype" /-->
+				<index name="xml_attr_id" />
+				<index name="xml_attr_lang" />
+				<index name="xml_attr_link" />
+				<index name="xml_attr_name" />
+				<index name="xml_attr_new" />
+				<index name="xml_attr_update" />
+				<index name="xml_attr_deprecate" />
+				<index name="xml_attr_make" />
+				<index name="xml_attr_mark" />
+				<index name="xml_attr_termid" />
+				<index name="xml_attr_urltype" />
+				<index name="xml_attr_type" />
+				<index name="xml_attr_target" />
+				<index name="xml_attr_number" />
+				<index name="xml_attr_right" />
+				<index name="xml_attr_offset" />
+				<index name="xml_attr_column" />
+				<index name="xml_attr_mode" />
+			</index>
+		</index>
+
+		<index name="reference_xslt"/>
+
+		<index name="reference_xslt_params"/>
+	</index>
+
+
+	<index name="other">
+		<index name="link"/>
+		<index name="glossary"/>
+	</index>
+	<!-- ================================================================================ -->
+	<item id="introduction">
+		<title>イントロダクション</title>
+	</item>
+	<!-- ================================================================================ -->
+	<item id="summary">
+		<title>概要</title>
+		<description>sXMLBookとはXMLベースのドキュメントシステムです。</description>
+
+		<text>複雑なHTMLなどリッチテキストを記載することなくリファレンスなどを容易に作成できます。</text>
+		<text>単純なXMLで構成されているためプログラムからの生成が容易で逆にプログラムへの組み込みも容易です。</text>
+	</item>
+	<!-- ================================================================================ -->
+	<item id="caseby">
+		<title>事例</title>
+		<text>なし</text>
+	</item>
+	<!-- ================================================================================ -->
+	<item id="spec">
+		<title>システム要件</title>
+		<table>
+			<columns>
+				<column>項目</column>
+				<column>値</column>
+				<column>メモ</column>
+			</columns>
+			<values>
+				<value>プラットフォーム</value>
+				<value>XML 1.0 及び XSLT 1.0</value>
+				<value>XSLTについては一部のエンジンについては保証外</value>
+			</values>
+			<values>
+				<value>言語</value>
+				<value>日本語</value>
+				<value>-</value>
+			</values>
+		</table>
+	</item>
+	<!-- ================================================================================ -->
+	<item id="license">
+		<title>ライセンス</title>
+		<text>本システムは商用・非商用問わずフリーウェアとします。</text>
+		<text mark="○">許諾事項</text>
+		<text mark="・">アーカイブ全体の再配布及びsxmlbook.dtd単体を自著作権物へ添付しての再配布</text>
+		<text mark="・">適切なライセンス下で動作するプログラム及びソフトウェアからの利用</text>
+		<text mark="○">禁止事項</text>
+		<text mark="・">改変その他著作権を侵害する行為</text>
+		<text mark="・">本アーカイブその物の販売及びそれに類する行為</text>
+		<memo>bin・examplesディレクトリ以下は個々のライセンスとなります。(ライセンス詳細は個々を参照。)</memo>
+	</item>
+	<!-- ================================================================================ -->
+	<item id="download">
+		<title>ダウンロード</title>
+		<description>ダウンロード</description>
+
+		<site>
+			<title>ダウンロード</title>
+			<url>http://code.google.com/p/sxmlbook/</url>
+		</site>
+	</item>
+	<!-- ================================================================================ -->
+	<item id="release">
+		<title>リリース情報</title>
+		<alert>本アプリケションはプロトタイプバージョンです。将来仕様・機能が大幅に変更される可能性があります。</alert>
+	</item>
+	<!-- ================================================================================ -->
+	<item id="changelog">
+		<title>変更履歴</title>
+	</item>
+	<!-- ================================================================================ -->
+	<item id="changelog_0_3_0_0" new="true">
+		<title>Ver 0.3.0_0</title>
+		<text>オープンソース公開元をGoogle CodeからGitHubへ移設しました。</text>
+		<text>Bootstrapのみ対応となりました。</text>
+	</item>
+	<item id="changelog_0_2_1_5">
+		<title>Ver 0.2.1_5</title>
+		<text>boostrap用XSLTのレイアウト修正</text>
+		<text>Fontアイコンの指定を可能に</text>
+		<text>タイトルへのテキストアイコンのメッセージを指定可能に</text>
+	</item>
+	<item id="changelog_0_2_1_4">
+		<title>Ver 0.2.1_4</title>
+		<text>boostrap用XSLTのレイアウト修正</text>
+	</item>
+	<item id="changelog_0_2_1_3">
+		<title>Ver 0.2.1_3</title>
+		<text>boostrap用XSLTのレイアウト修正</text>
+	</item>
+	<item id="changelog_0_2_1_2">
+		<title>Ver 0.2.1_2</title>
+		<text>boostrap用XSLTのタグエラーを修正</text>
+		<text>mediaタグ追加（bootstrapのmediaと同様）</text>
+	</item>
+	<item id="changelog_0_2_1_1">
+		<title>Ver 0.2.1_1</title>
+		<text>boostrap用XSLTのタグエラーを修正</text>
+		<text>jquery mobileのXSLTを仮対応</text>
+	</item>
+	<item id="changelog_0_2_1_0">
+		<title>Ver 0.2.1_0</title>
+		<text>boostrap対応</text>
+		<text>html5対応以外のXSLTをオミット</text>
+	</item>
+	<item id="changelog_0_2_0_2">
+		<title>Ver 0.2.0_2</title>
+		<text>summaryタグ追加</text>
+		<link>xml_summary</link>
+	</item>
+	<item id="changelog_0_2_0_1">
+		<title>Ver 0.2.0_1</title>
+		<text>イメージ列挙(thumbnail)に対応</text>
+		<text>スタイルシート更新</text>
+	</item>
+	<item id="changelog_0_2_0_0">
+		<title>Ver 0.2.0_0</title>
+		<text>jQuery Mobile v1.2.0に対応</text>
+	</item>
+	<item id="changelog_0_1_0_2">
+		<title>Ver 0.1.0_2</title>
+		<text>ドメイン変更</text>
+		<text>スタイルシート更新</text>
+	</item>
+	<item id="changelog_0_1_0_1">
+		<title>Ver 0.1.0_1</title>
+		<text>DTD更新</text>
+		<text>スタイルシート更新</text>
+		<text>XSLT更新</text>
+		<text>ドキュメント更新</text>
+	</item>
+	<item id="changelog_0_1_0_0">
+		<title>Ver 0.1.0_0</title>
+		<text>DTD更新</text>
+		<text>スタイルシート更新</text>
+		<text>XSLT更新</text>
+		<text>ドキュメント更新</text>
+	</item>
+	<item id="changelog_0_0_1_0">
+		<title>Ver 0.0.1_0</title>
+		<text>DTD更新</text>
+		<text>スタイルシート更新</text>
+		<text>XSLT更新</text>
+		<text>ドキュメント更新</text>
+	</item>
+	<item id="changelog_0_0_0_0">
+		<title>Ver 0.0.0_0</title>
+		<text>新規リリース</text>
+	</item>
+	<!-- ================================================================================ -->
+	<item id="bug">
+		<title>不具合情報</title>
+		<text>特になし。（現在調査中）</text>
+	</item>
+	<!-- ================================================================================ -->
+	<item id="add">
+		<title>改修予定項目</title>
+		<text>特になし。（現在調整中）</text>
+	</item>
+	<!-- ================================================================================ -->
+	<item id="tutorial">
+		<title>チュートリアル</title>
+		<text>（作成中）</text>
+	</item>
+	<!-- ================================================================================ -->
+	<item id="function">
+		<title>機能ガイド</title>
+		<description>各機能についてのガイド</description>
+
+		<text>（作成中）</text>
+	</item>
+	<!-- ================================================================================ -->
+	<item id="reference">
+		<title>リファレンス</title>
+	</item>
+	<!-- ================================================================================ -->
+	<item id="reference_xml">
+		<title>sXMLBook XML リファレンス</title>
+		<text>XML 1.0 ベースの処理となります。</text>
+		<text>恐らくパソコン用の主流なブラウザなら特に問題なく使用できます。</text>
+
+		<links>
+			<id>reference_xml_element</id>
+			<id>reference_xml_attribute</id>
+		</links>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="reference_xml_element">
+		<title>sXMLBook XML エレメント リファレンス</title>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="reference_xml_attribute">
+		<title>sXMLBook XML 属性 リファレンス</title>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="reference_xslt">
+		<title>sXMLBook XSLT リファレンス</title>
+		<text>XSLT 1.0 ベースの処理となります。</text>
+		<text>恐らくパソコン用の主流なブラウザなら特に問題なく使用できます。</text>
+	</item>
+	<!-- ================================================================================ -->
+	<item id="reference_xslt_params" make="true">
+		<title>sXMLBook XSLT パラメータ リファレンス</title>
+		<table>
+			<columns>
+				<column>概要</column>
+				<column>引き数名</column>
+				<column>初期値</column>
+				<column>例</column>
+			</columns>
+			<values>
+				<value>スタイルシート</value>
+				<value>html.css</value>
+				<value>sxmlbook.css</value>
+				<value>					&lt;
+					xsl:param name="html.css"
+					&gt;
+					my.css
+					&lt;
+					/xsl:param
+					&gt;
+				</value>
+				<value></value>
+			</values>
+			<values>
+				<value>タイトルスタイルシート</value>
+				<value>clazz.title</value>
+				<value></value>
+				<value>test→content_subtitle_test</value>
+				<value>各アイテムのスタイルシート名に付与されます。</value>
+			</values>
+			<values>
+				<value>イメージクリック動作</value>
+				<value>image.click</value>
+				<value>0：無し 1：イメージ拡大</value>
+				<value>0</value>
+				<value>イメージをクリックした際の動作を指定出来ます。</value>
+			</values>
+		</table>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="sample">
+		<title>サンプル</title>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="sample_original">
+		<title>独自XSLTサンプル</title>
+
+		<text>直接sxmlbook.xslを利用することも可能ですが以下のようにすることにより引数などを指定することが可能となります。</text>
+
+		<code>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+
+&lt;xsl:stylesheet
+	xmlns=&quot;http://www.w3.org/1999/xhtml&quot;
+	xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot;
+	version=&quot;1.0&quot;
+&gt;
+	&lt;-- 本体呼び出し(必須) --&gt;
+	&lt;xsl:import href=&quot;sxmlbook.xsl&quot; /&gt;
+
+	&lt;-- 引数 --&gt;
+	&lt;-- スタイルシート指定 --&gt;
+	&lt;xsl:param name=&quot;html.css&quot;&gt;test.css&lt;/xsl:param&gt;
+
+&lt;/xsl:stylesheet&gt;
+		</code>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="sample_sxmlbook">
+		<title>sXMLBook基本サンプル</title>
+
+		<text>基本的なXML構造は以下のようになります。</text>
+
+		<code>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+
+&lt;?xml-stylesheet href=&quot;sxmlbook.xsl&quot; type=&quot;text/xsl&quot; ?&gt;
+
+&lt;!DOCTYPE sxmlbook SYSTEM &quot;sxmlbook.dtd&quot;&gt;
+
+&lt;sxmlbook version=&quot;0.0&quot; lang=&quot;ja&quot;&gt;
+	&lt;!-- ================================================================================ --&gt;
+	&lt;info&gt;
+		&lt;title&gt;sXMLBook ドキュメント&lt;/title&gt;
+		&lt;description&gt;Simple XML Book Ver.0.0.0_0 ドキュメント&lt;/description&gt;
+		&lt;release&gt;$Id: sxmlbook.xml 102 2014-10-22 19:11:19Z expertsoftware.i@gmail.com $&lt;/release&gt;
+		&lt;date&gt;2007/05/01&lt;/date&gt;
+		&lt;company&gt;K.Sonohara&lt;/company&gt;
+		&lt;homepage&gt;http://www.expertsoftware-s.com/&lt;/homepage&gt;
+		&lt;copyright&gt;Copyright (C) 2007 K.Sonohara All Right Reserved.&lt;/copyright&gt;
+	&lt;/info&gt;
+
+	&lt;!-- ================================================================================ --&gt;
+	&lt;index name=&quot;introduction&quot;&gt;
+		&lt;index name=&quot;summary&quot;/&gt;
+	&lt;/index&gt;
+
+	&lt;!-- ================================================================================ --&gt;
+	&lt;item id=&quot;introduction&quot;&gt;
+		&lt;title&gt;イントロダクション&lt;/title&gt;
+	&lt;/item&gt;
+
+	&lt;!-- ================================================================================ --&gt;
+	&lt;item id=&quot;summary&quot;&gt;
+		&lt;title&gt;概要&lt;/title&gt;
+		&lt;faq&gt;
+			&lt;title&gt;sXMLBookとは・・・&lt;/title&gt;
+			&lt;text&gt;XMLベースのドキュメントシステムです。&lt;/text&gt;
+		&lt;/faq&gt;
+		&lt;text&gt;複雑なHTMLなどリッチテキストを記載することなくリファレンスなどを容易に作成できます。&lt;/text&gt;
+		&lt;text&gt;単純なXMLで構成されているためプログラムからの生成が容易で逆にプログラムへの組み込みも容易です。&lt;/text&gt;
+		&lt;text&gt;よく似たシステムとしてxDocBookが存在しますがこちらは機能は豊富な分複雑です。&lt;/text&gt;
+	&lt;/item&gt;
+&lt;/sxmlbook&gt;
+		</code>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="faq">
+		<title>FAQ</title>
+		<description>sXMLBookについてのFAQ</description>
+		<faq>
+			<title>多国語対応</title>
+			<text>現在日本語のみです。対応するかどうかは未定です。</text>
+		</faq>
+		<faq>
+			<title>一つのHTMLファイルしか出力できませんが複数に分割は可能ですか？</title>
+			<text>現在未対応です。将来対応する予定です。</text>
+		</faq>
+		<faq>
+			<title>sXMLBookを編集するドキュメントツールはありますか？</title>
+			<text>ありません。</text>
+		</faq>
+	</item>
+	<!-- ================================================================================ -->
+	<item id="other">
+		<title>その他</title>
+		<description>その他</description>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_sxmlbook">
+		<title>sxmlbook エレメント</title>
+		<description>XML本体です。</description>
+
+		<ref_element elementtype="xml">
+			<element_attribute type="required" link="xml_attr_version" define="version" />
+			<element_attribute type="required" link="xml_attr_lang" define="lang" />
+
+			<element_child link="xml_info" define="info" />
+			<element_child link="xml_summary" define="summary" />
+			<element_child link="xml_index" define="index" />
+			<element_child link="xml_item" define="item" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_ref_class">
+		<title>xml_ref_class エレメント</title>
+		<description>Python等のクラス リファレンスを記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_attribute type="required" link="xml_attr_classtype" define="classtype" />
+
+			<element_parent link="xml_item" define="item" />
+		</ref_element>
+
+		<xml_ref_class classtype="python">
+		</xml_ref_class>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_ref_element">
+		<title>ref_element エレメント</title>
+		<description>XML等のエレメントのリファレンスを記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_attribute type="required" link="xml_attr_elementtype" define="elementtype" />
+
+			<element_parent link="xml_item" define="item" />
+			<element_child link="xml_element_parent" define="element_parent" />
+			<element_child link="xml_element_child" define="element_child" />
+			<element_child link="xml_code" define="code" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_element_child">
+		<title>element_child エレメント</title>
+		<description>XML等の子エレメントのリファレンスを記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_ref_element" define="ref_element" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_element_parent">
+		<title>element_parent エレメント</title>
+		<description>XML等の親エレメントのリファレンスを記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_ref_element" define="ref_element" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_title">
+		<title>title エレメント</title>
+		<description>各アイテムのタイトルを記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_summary" define="summary" />
+			<element_parent link="xml_info" define="info" />
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_image" define="image" />
+			<element_parent link="xml_term" define="term" />
+			<element_parent link="xml_faq" define="faq" />
+			<element_parent link="xml_topic" define="topic" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_description">
+		<title>description エレメント</title>
+		<description>各アイテムの詳細を記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_info" define="info" />
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_release">
+		<title>release エレメント</title>
+		<description>各アイテムのリリース情報を記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_info" define="info" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_list">
+		<title>list エレメント</title>
+		<description>リスト形式で記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_child link="xml_value" define="value" />
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+			<code>
+&lt;list&gt;
+	&lt;value&gt;値&lt;/value&gt;
+	&lt;value&gt;value&lt;/value&gt;
+&lt;/list&gt;
+			</code>
+		</ref_element>
+
+		<list>
+			<value>値</value>
+			<value>value</value>
+		</list>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_map">
+		<title>map エレメント</title>
+		<description>キーと値を対で記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_child link="xml_key" define="key" />
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+
+			<code>
+&lt;map&gt;
+	&lt;key name="キー"&gt;値&lt;/key&gt;
+	&lt;key name="key"&gt;value&lt;/key&gt;
+&lt;/map&gt;
+			</code>
+		</ref_element>
+
+
+		<map>
+			<key name="キー">値</key>
+			<key name="key">value</key>
+		</map>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_date">
+		<title>date エレメント</title>
+		<description>各アイテムの日付情報を記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_info" define="info" />
+			<element_parent link="xml_item" define="item" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_company">
+		<title>company エレメント</title>
+		<description>各アイテムの会社情報を記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_info" define="info" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_homepage">
+		<title>homepage エレメント</title>
+		<description>各アイテムのホームページURLを記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_info" define="info" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_copyright">
+		<title>copyright エレメント</title>
+		<description>各アイテムの著作権情報を記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_info" define="info" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_info">
+		<title>info エレメント</title>
+		<description>ドキュメントの情報を定義します。</description>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_sxmlbook" define="sxmlbook" />
+
+			<element_child link="xml_title" define="title" />
+			<element_child link="xml_description" define="description" />
+			<element_child link="xml_release" define="release" />
+			<element_child link="xml_date" define="date" />
+			<element_child link="xml_company" define="company" />
+			<element_child link="xml_homepage" define="homepage" />
+			<element_child link="xml_copyright" define="copyright" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_index">
+		<title>index エレメント</title>
+		<description>ドキュメントの目次構成を定義します。</description>
+
+		<ref_element elementtype="xml">
+			<element_attribute link="xml_attr_name" define="name" />
+			<element_attribute link="xml_attr_child" define="child" />
+
+			<element_parent link="xml_sxmlbook" define="sxmlbook" />
+			<element_parent link="xml_index" define="index" />
+
+			<element_child link="xml_index" define="index" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_icon">
+		<title>icon エレメント</title>
+		<description>テキストアイコンを定義します。</description>
+
+		<icon>コードのサンプル</icon>
+
+		<ref_element elementtype="xml">
+			<element_node description="表示するメッセージ" />
+			<element_parent link="xml_item" define="item" />
+
+			<code>
+&lt;icon&gt;コードのサンプル&lt;/icon&gt;
+			</code>
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_item">
+		<title>item エレメント</title>
+		<description>ドキュメントのアイテム構成を定義します。</description>
+
+		<ref_element elementtype="xml">
+			<element_attribute type="required" link="xml_attr_id" define="id" />
+			<element_attribute link="xml_attr_make" define="make" />
+			<element_attribute link="xml_attr_new" define="new" />
+			<element_attribute link="xml_attr_update" define="update" />
+			<element_attribute link="xml_attr_deprecate" define="deprecate" />
+			<element_attribute link="xml_attr_offset" define="offset" />
+			<element_attribute link="xml_attr_column" define="column" />
+
+			<element_child link="xml_icon" define="icon" />
+			<element_child link="xml_media" define="media" />
+			<element_child link="xml_title" define="title" />
+			<element_child link="xml_description" define="description" />
+			<element_child link="xml_date" define="date" />
+			<element_child link="xml_separator" define="separator" />
+			<element_child link="xml_text" define="text" />
+			<element_child link="xml_calender" define="calender" />
+			<element_child link="xml_code" define="code" />
+			<element_child link="xml_image" define="image" />
+			<element_child link="xml_warn" define="warn" />
+			<element_child link="xml_alert" define="alert" />
+			<element_child link="xml_memo" define="memo" />
+			<element_child link="xml_topic" define="topic" />
+			<element_child link="xml_faq" define="faq" />
+			<element_child link="xml_term" define="term" />
+			<element_child link="xml_url" define="url" />
+			<element_child link="xml_thumbnails" define="thumbnails" />
+			<element_child link="xml_table" define="table" />
+			<element_child link="xml_list" define="list" />
+			<element_child link="xml_map" define="map" />
+			<element_child link="xml_site" define="site" />
+			<element_child link="xml_link" define="link" />
+			<element_child link="xml_mail" define="mail" />
+			<element_child link="xml_newline" define="newline" />
+			<element_child link="xml_links" define="links" />
+			<element_child link="xml_terms" define="terms" />
+
+			<element_parent link="xml_sxmlbook" define="sxmlbook" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_mail">
+		<title>mail エレメント</title>
+		<description>メールを定義します。</description>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+
+			<element_child type="1" link="xml_account" define="account" />
+			<element_child type="1" link="xml_domain" define="domain" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_account">
+		<title>account エレメント</title>
+		<description>メールのアカウント名を記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_mail" define="mail" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_width">
+		<title>横幅 エレメント</title>
+		<description>横幅を定義します。</description>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_googlemap" define="mail" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_height">
+		<title>縦幅 エレメント</title>
+		<description>縦幅を定義します。</description>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_googlemap" define="mail" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_googlemap">
+		<title>Googleマップ エレメント</title>
+		<description>埋め込み用Googleマップを定義します。</description>
+
+		<text>Googleの利用規約に従って利用してください。</text>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+
+			<element_child type="1" link="xml_url" define="url" />
+			<element_child type="1" link="xml_width" define="width" />
+			<element_child type="1" link="xml_height" define="height" />
+
+			<code>
+&lt;googlemap&gt;
+	&lt;url&gt;https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13120.427373193317!2d135.495951!3d34.702485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1baec822e859c84a!2z5aSn6Ziq6aeF!5e0!3m2!1sja!2sjp!4v1411106437984&lt;/url&gt;
+	&lt;width&gt;600&lt;/width&gt;
+	&lt;height&gt;450&lt;/height&gt;
+&lt;/googlemap&gt;
+			</code>
+		</ref_element>
+
+		<googlemap>
+			<url>https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13120.427373193317!2d135.495951!3d34.702485!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1baec822e859c84a!2z5aSn6Ziq6aeF!5e0!3m2!1sja!2sjp!4v1411106437984</url>
+			<width>600</width>
+			<height>450</height>
+		</googlemap>
+
+	</item>
+	<!-- ================================================================================ -->
+	<item id="xml_domain">
+		<title>domain エレメント</title>
+		<description>メールのドメイン名を記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_mail" define="mail" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_image">
+		<title>image エレメント</title>
+		<description>イメージを定義します。</description>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+
+			<element_child type="1" link="xml_title" define="title" />
+			<element_child type="1" link="xml_url" define="url" />
+			<element_child type="1" link="xml_size" define="size" />
+
+			<code>
+&lt;image&gt;
+	&lt;title&gt;サンプル&lt;/title&gt;
+	&lt;url&gt;ajax-loader.gif&lt;/url&gt;
+	&lt;size&gt;mini&lt;/size&gt;
+&lt;/image&gt;
+			</code>
+		</ref_element>
+
+		<image>
+			<title>サンプル</title>
+			<url>ajax-loader.gif</url>
+			<size>mini</size>
+		</image>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_url">
+		<title>url エレメント</title>
+		<description>イメージのURLを記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_googlemap" define="googlemap" />
+			<element_parent link="xml_image" define="image" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_size">
+		<title>size エレメント</title>
+		<description>イメージのサイズを記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_image" define="image" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_site">
+		<title>site エレメント</title>
+		<description>サイトURLを記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_child link="xml_title" define="title" />
+			<element_child link="xml_url" define="url" />
+			<element_child link="xml_text" define="text" />
+
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_summary">
+		<title>summary エレメント</title>
+		<description>ドキュメントの概要を記載します。文書は目次の上部に表示されます。</description>
+
+		<ref_element elementtype="xml">
+			<element_attribute type="required" link="xml_attr_id" define="id" />
+			<element_attribute link="xml_attr_make" define="make" />
+
+			<element_child link="xml_media" define="media" />
+			<element_child link="xml_title" define="title" />
+			<element_child link="xml_description" define="description" />
+			<element_child link="xml_date" define="date" />
+			<element_child link="xml_separator" define="separator" />
+			<element_child link="xml_text" define="text" />
+			<element_child link="xml_calender" define="calender" />
+			<element_child link="xml_code" define="code" />
+			<element_child link="xml_image" define="image" />
+			<element_child link="xml_warn" define="warn" />
+			<element_child link="xml_alert" define="alert" />
+			<element_child link="xml_memo" define="memo" />
+			<element_child link="xml_topic" define="topic" />
+			<element_child link="xml_faq" define="faq" />
+			<element_child link="xml_term" define="term" />
+			<element_child link="xml_url" define="url" />
+			<element_child link="xml_thumbnails" define="thumbnails" />
+			<element_child link="xml_table" define="table" />
+			<element_child link="xml_list" define="list" />
+			<element_child link="xml_map" define="map" />
+			<element_child link="xml_site" define="site" />
+			<element_child link="xml_link" define="link" />
+			<element_child link="xml_mail" define="mail" />
+			<element_child link="xml_newline" define="newline" />
+			<element_child link="xml_links" define="links" />
+			<element_child link="xml_terms" define="terms" />
+
+			<element_parent link="xml_sxmlbook" define="sxmlbook" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_term">
+		<title>term エレメント</title>
+		<description>用語のリンク。</description>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_terms" define="terms" />
+			<element_parent link="xml_summary" define="summary" />
+		</ref_element>
+
+		<term>xml</term>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_termitem">
+		<title>termitem エレメント</title>
+		<description>用語を定義します。</description>
+
+		<ref_element elementtype="xml">
+			<element_attribute link="xml_attr_termid" define="termid" />
+
+			<element_child link="xml_title" define="title" />
+			<element_child link="xml_text" define="text" />
+
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_thumbnail">
+		<title>thumbnail エレメント</title>
+		<description>イメージサムネイルを定義します。</description>
+
+		<ref_element elementtype="xml">
+			<element_attribute link="xml_attr_link" define="link" />
+
+			<element_child link="xml_title" define="title" />
+			<element_child link="xml_url" define="url" />
+			<element_child link="xml_size" define="size" />
+
+			<element_parent link="xml_thumbnail" define="thumbnail" />
+
+			<code>
+&lt;thumbnails&gt;
+	&lt;title&gt;サンプル&lt;/title&gt;
+	&lt;thumbnail&gt;
+		&lt;title&gt;サンプル1&lt;/title&gt;
+		&lt;url&gt;ajax-loader.gif&lt;/url&gt;
+		&lt;size&gt;64&lt;/size&gt;
+	&lt;/thumbnail&gt;
+	&lt;thumbnail&gt;
+		&lt;title&gt;サンプル2&lt;/title&gt;
+		&lt;url&gt;ajax-loader.gif&lt;/url&gt;
+		&lt;size&gt;64&lt;/size&gt;
+	&lt;/thumbnail&gt;
+	&lt;thumbnail&gt;
+		&lt;title&gt;サンプル3&lt;/title&gt;
+		&lt;url&gt;ajax-loader.gif&lt;/url&gt;
+		&lt;size&gt;64&lt;/size&gt;
+	&lt;/thumbnail&gt;
+&lt;/thumbnails&gt;
+			</code>
+		</ref_element>
+
+		<thumbnails>
+			<title>サンプル</title>
+			<thumbnail>
+				<title>サンプル1</title>
+				<url>ajax-loader.gif</url>
+				<size>64</size>
+			</thumbnail>
+			<thumbnail>
+				<title>サンプル2</title>
+				<url>ajax-loader.gif</url>
+				<size>64</size>
+			</thumbnail>
+			<thumbnail>
+				<title>サンプル3</title>
+				<url>ajax-loader.gif</url>
+				<size>64</size>
+			</thumbnail>
+		</thumbnails>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_panel">
+		<title>panel エレメント</title>
+		<description>画像付き説明する内容を記載します。</description>
+
+		<ref_element elementtype="xml">
+
+			<element_child link="xml_title" define="title" />
+			<element_child link="xml_url" define="url" />
+
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+
+			<code>
+&lt;panel&gt;
+	&lt;title&gt;サンプル&lt;/title&gt;
+	&lt;url&gt;ajax-loader.gif&lt;/url&gt;
+	&lt;text&gt;メモ&lt;/text&gt;
+&lt;/panel&gt;
+			</code>
+		</ref_element>
+
+		<panel column="3" clazz="text-center">
+			<title>サンプル</title>
+			<url>ajax-loader.gif</url>
+			<text>メモ</text>
+		</panel>
+
+		<panel column="3" clazz="text-center">
+			<title>サンプル</title>
+			<url>ajax-loader.gif</url>
+			<text>メモ</text>
+		</panel>
+
+		<panel column="3" clazz="text-center">
+			<title>サンプル</title>
+			<url>ajax-loader.gif</url>
+			<text>メモ</text>
+		</panel>
+
+		<panel column="3" clazz="text-center">
+			<title>サンプル</title>
+			<url>ajax-loader.gif</url>
+			<text>メモ</text>
+		</panel>
+	</item>
+
+
+	<!-- ================================================================================ -->
+	<item id="xml_step">
+		<title>step エレメント</title>
+		<description>画像付き手順を説明する内容を記載します。</description>
+
+		<ref_element elementtype="xml">
+
+			<element_child link="xml_title" define="title" />
+			<element_child link="xml_url" define="url" />
+			<element_child link="xml_size" define="size" />
+
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+
+			<code>
+&lt;step&gt;
+	&lt;title&gt;サンプル&lt;/title&gt;
+	&lt;url&gt;ajax-loader.gif&lt;/url&gt;
+	&lt;value&gt;手順&lt;/value&gt;
+	&lt;value&gt;手順&lt;/value&gt;
+	&lt;text&gt;メモ&lt;/text&gt;
+&lt;/step&gt;
+			</code>
+		</ref_element>
+
+		<step>
+			<title>サンプル</title>
+			<url>ajax-loader.gif</url>
+			<value>手順</value>
+			<value>手順</value>
+			<text>メモ</text>
+		</step>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_media">
+		<title>media エレメント</title>
+		<description>横に画像を表示し文章を表示します。</description>
+
+		<ref_element elementtype="xml">
+			<element_attribute link="xml_attr_right" define="right" />
+			<element_child link="xml_title" define="title" />
+			<element_child link="xml_url" define="url" />
+			<element_child link="xml_size" define="size" />
+
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+
+			<code>
+&lt;media right="true"&gt;
+	&lt;title&gt;サンプル&lt;/title&gt;
+	&lt;url&gt;ajax-loader.gif&lt;/url&gt;
+	&lt;value&gt;手順&lt;/value&gt;
+	&lt;value&gt;手順&lt;/value&gt;
+	&lt;text&gt;メモ&lt;/text&gt;
+&lt;/media&gt;
+&lt;media&gt;
+	&lt;title&gt;サンプル&lt;/title&gt;
+	&lt;url&gt;ajax-loader.gif&lt;/url&gt;
+	&lt;value&gt;手順&lt;/value&gt;
+	&lt;value&gt;手順&lt;/value&gt;
+	&lt;text&gt;メモ&lt;/text&gt;
+&lt;/media&gt;
+			</code>
+		</ref_element>
+
+		<media right="true">
+			<title>サンプル</title>
+			<url>ajax-loader.gif</url>
+			<value>手順</value>
+			<value>手順</value>
+			<text>メモ</text>
+		</media>
+
+		<media>
+			<title>サンプル</title>
+			<url>ajax-loader.gif</url>
+			<value>手順</value>
+			<value>手順</value>
+			<text>メモ</text>
+		</media>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_thumbnails">
+		<title>thumbnails エレメント</title>
+		<description>イメージサムネイル群を定義します。実際のサムネイル画像はthumbnailエレメントで定義してください。</description>
+
+		<ref_element elementtype="xml">
+			<element_child link="xml_thumbnail" define="thumbnail" />
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_faq">
+		<title>faq エレメント</title>
+		<description>FAQを定義します。</description>
+
+		<ref_element elementtype="xml">
+			<element_child link="xml_title" define="title" />
+			<element_child link="xml_text" define="text" />
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_topic">
+		<title>topic エレメント</title>
+		<description>トピックを定義します。</description>
+
+		<ref_element elementtype="xml">
+			<element_child link="xml_title" define="title" />
+			<element_child link="xml_text" define="text" />
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_text">
+		<title>text エレメント</title>
+		<description>通常のテキストを記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_attribute link="xml_attr_mark" define="mark" />
+			<element_attribute link="xml_attr_type" define="type" />
+
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_day">
+		<title>day エレメント</title>
+		<description>日付です。</description>
+
+		<ref_element elementtype="xml">
+			<element_attribute type="required" link="xml_attr_number" define="number" />
+			<element_parent link="xml_days" define="days" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_days">
+		<title>days エレメント</title>
+		<description>日付群です。</description>
+
+		<ref_element elementtype="xml">
+			<element_child link="xml_day" define="day" />
+
+			<element_parent link="xml_calender" define="calender" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_calender">
+		<title>calender エレメント</title>
+		<description>カレンダーを表示します。</description>
+
+		<ref_element elementtype="xml">
+			<element_child link="xml_title" define="title" />
+			<element_child link="xml_days" define="days" />
+
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+
+			<code>
+&lt;calender&gt;
+	&lt;title&gt;サンプル 2014年4月&lt;/title&gt;
+	&lt;days&gt;
+		&lt;day number="30"&gt; &lt;/day&gt;
+		&lt;day number="31"&gt; &lt;/day&gt;
+		&lt;day number="1"&gt;test&lt;/day&gt;
+		&lt;day number="2"&gt; &lt;/day&gt;
+		&lt;day number="3"&gt; &lt;/day&gt;
+		&lt;day number="4"&gt; &lt;/day&gt;
+		&lt;day number="5"&gt; &lt;/day&gt;
+	&lt;/days&gt;
+	&lt;days&gt;
+		&lt;day number="6"&gt; &lt;/day&gt;
+		&lt;day number="7"&gt; &lt;/day&gt;
+		&lt;day number="8"&gt; &lt;/day&gt;
+		&lt;day number="9"&gt; &lt;/day&gt;
+		&lt;day number="10"&gt; &lt;/day&gt;
+		&lt;day number="11"&gt; &lt;/day&gt;
+		&lt;day number="12"&gt; &lt;/day&gt;
+	&lt;/days&gt;
+	&lt;days&gt;
+		&lt;day number="13"&gt; &lt;/day&gt;
+		&lt;day number="14"&gt; &lt;/day&gt;
+		&lt;day number="15"&gt; &lt;/day&gt;
+		&lt;day number="16"&gt; &lt;/day&gt;
+		&lt;day number="17"&gt; &lt;/day&gt;
+		&lt;day number="18"&gt; &lt;/day&gt;
+		&lt;day number="19"&gt; &lt;/day&gt;
+	&lt;/days&gt;
+	&lt;days&gt;
+		&lt;day number="20"&gt; &lt;/day&gt;
+		&lt;day number="21"&gt; &lt;/day&gt;
+		&lt;day number="22"&gt; &lt;/day&gt;
+		&lt;day number="23"&gt; &lt;/day&gt;
+		&lt;day number="24"&gt; &lt;/day&gt;
+		&lt;day number="25"&gt; &lt;/day&gt;
+		&lt;day number="26"&gt; &lt;/day&gt;
+	&lt;/days&gt;
+	&lt;days&gt;
+		&lt;day number="27"&gt; &lt;/day&gt;
+		&lt;day number="28"&gt; &lt;/day&gt;
+		&lt;day number="29"&gt; &lt;/day&gt;
+		&lt;day number="30"&gt; &lt;/day&gt;
+		&lt;day number="1"&gt; &lt;/day&gt;
+		&lt;day number="2"&gt; &lt;/day&gt;
+		&lt;day number="3"&gt; &lt;/day&gt;
+	&lt;/days&gt;
+&lt;/calender&gt;
+			</code>
+		</ref_element>
+
+		<calender>
+			<title>サンプル 2014年4月</title>
+			<days>
+				<day number="30"> </day>
+				<day number="31"> </day>
+				<day number="1">test</day>
+				<day number="2"> </day>
+				<day number="3"> </day>
+				<day number="4"> </day>
+				<day number="5"> </day>
+			</days>
+			<days>
+				<day number="6"> </day>
+				<day number="7"> </day>
+				<day number="8"> </day>
+				<day number="9"> </day>
+				<day number="10"> </day>
+				<day number="11"> </day>
+				<day number="12"> </day>
+			</days>
+			<days>
+				<day number="13"> </day>
+				<day number="14"> </day>
+				<day number="15"> </day>
+				<day number="16"> </day>
+				<day number="17"> </day>
+				<day number="18"> </day>
+				<day number="19"> </day>
+			</days>
+			<days>
+				<day number="20"> </day>
+				<day number="21"> </day>
+				<day number="22"> </day>
+				<day number="23"> </day>
+				<day number="24"> </day>
+				<day number="25"> </day>
+				<day number="26"> </day>
+			</days>
+			<days>
+				<day number="27"> </day>
+				<day number="28"> </day>
+				<day number="29"> </day>
+				<day number="30"> </day>
+				<day number="1"> </day>
+				<day number="2"> </day>
+				<day number="3"> </day>
+			</days>
+		</calender>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_code">
+		<title>code エレメント</title>
+		<description>プログラムなどのコードを記載します。</description>
+
+		<text>通常この定義はデータをそのまま表示します。</text>
+
+		<ref_element elementtype="xml">
+			<element_node description="テキスト内容" />
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+			<code>
+&lt;code&gt;class test;&lt;code&gt;
+			</code>
+		</ref_element>
+
+		<code>class test;</code>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_warn">
+		<title>warn エレメント</title>
+		<description>注意を記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_node description="テキスト内容" />
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+			<code>
+&lt;warn&gt;テスト&lt;warn&gt;
+			</code>
+		</ref_element>
+
+		<warn>テスト</warn>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_alert">
+		<title>alert エレメント</title>
+		<description>警告を記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_node description="テキスト内容" />
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+			<code>
+&lt;alert&gt;テスト&lt;alert&gt;
+			</code>
+		</ref_element>
+
+		<alert>テスト</alert>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_memo">
+		<title>memo エレメント</title>
+		<description>メモを記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_node description="テキスト内容" />
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+			<code>
+&lt;memo&gt;テスト&lt;memo&gt;
+			</code>
+		</ref_element>
+
+		<memo>テスト</memo>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_link">
+		<title>link エレメント</title>
+		<description>文書内リンクを記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_links" define="links" />
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_value">
+		<title>value エレメント</title>
+		<description>値を記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_value" define="value" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_values">
+		<title>values エレメント</title>
+		<description>値リストを定義します。</description>
+
+		<ref_element elementtype="xml">
+			<element_child link="xml_value" define="value" />
+			<element_parent link="xml_table" define="table" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_columns">
+		<title>columns エレメント</title>
+		<description>カラムリストを定義します。</description>
+
+		<ref_element elementtype="xml">
+			<element_child link="xml_column" define="column" />
+			<element_parent link="xml_table" define="table" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_column">
+		<title>column エレメント</title>
+		<description>カラムを記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_columns" define="columns" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_table">
+		<title>table エレメント</title>
+		<description>テーブルを定義します。</description>
+
+		<ref_element elementtype="xml">
+			<element_child link="xml_columns" define="columns" />
+			<element_child link="xml_values" define="values" />
+			<element_parent link="xml_item" define="item" />
+			<code>
+		&lt;table&gt;
+			&lt;columns&gt;
+				&lt;column&gt;画像&lt;/column&gt;
+				&lt;column&gt;文字&lt;/column&gt;
+			&lt;/columns&gt;
+			&lt;values&gt;
+				&lt;value&gt;
+					&lt;image&gt;
+						&lt;url&gt;ajax-loader.gif&lt;/url&gt;
+						&lt;size&gt;mini&lt;/size&gt;
+					&lt;/image&gt;
+				&lt;/value&gt;
+				&lt;value&gt;
+					あああ
+				&lt;/value&gt;
+			&lt;/values&gt;
+			&lt;values&gt;
+				&lt;value&gt;
+					-
+				&lt;/value&gt;
+				&lt;value&gt;
+					あああ
+				&lt;/value&gt;
+			&lt;/values&gt;
+		&lt;/table&gt;
+			</code>
+		</ref_element>
+
+		<table>
+			<columns>
+				<column>画像</column>
+				<column>文字</column>
+			</columns>
+			<values>
+				<value>
+					<image>
+						<url>ajax-loader.gif</url>
+						<size>mini</size>
+					</image>
+				</value>
+				<value>
+					あああ
+				</value>
+			</values>
+			<values>
+				<value>
+					-
+				</value>
+				<value>
+					あああ
+				</value>
+			</values>
+		</table>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_newline">
+		<title>newline エレメント</title>
+		<description>改行を定義します。</description>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_separator">
+		<title>separator エレメント</title>
+		<description>セパレータを定義します。</description>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_terms">
+		<title>terms エレメント</title>
+		<description>関連用語を定義します。</description>
+
+		<ref_element elementtype="xml">
+			<element_child link="xml_term" define="term" />
+
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_id">
+		<title>id エレメント</title>
+		<description>IDを記載します。</description>
+		<text>定義すべきIDはドキュメント内のIDである必要があります。</text>
+
+		<ref_element elementtype="xml">
+			<element_parent link="xml_terms" define="terms" />
+			<element_parent link="xml_links" define="links" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_links">
+		<title>links エレメント</title>
+		<description>関連項目を定義します。</description>
+
+		<ref_element elementtype="xml">
+			<element_child link="xml_link" define="link" />
+
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_summary" define="summary" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_attr_version">
+		<title>version 属性</title>
+		<description>バージョンを記載します。</description>
+
+		<text>現状「0.0」のみ対応です。</text>
+
+		<ref_element elementtype="xml">
+			<atribute_element link="xml_sxmlbook" define="sxmlbook" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_attr_lang">
+		<title>lang 属性</title>
+		<description>言語を記載します。</description>
+
+		<text>現状「ja」のみ対応です。</text>
+
+		<ref_element elementtype="xml">
+			<atribute_element link="xml_sxmlbook" define="sxmlbook" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_attr_name">
+		<title>name 属性</title>
+		<description>対象のアイテムIDを記載します。</description>
+
+		<ref_element elementtype="xml">
+			<atribute_element link="xml_index" define="index" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_attr_child">
+		<title>child 属性</title>
+		<description>子供を目次化しない場合を「false」を記載します。</description>
+
+		<ref_element elementtype="xml">
+			<atribute_element link="xml_index" define="index" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_attr_classtype">
+		<title>classtype 属性</title>
+		<description>クラスタイプを記載します。</description>
+
+		<text>現状「python」のみ対応です。</text>
+
+		<ref_element elementtype="xml">
+			<atribute_element link="xml_ref_element" define="element" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_attr_elementtype">
+		<title>elementtype 属性</title>
+		<description>エレメントタイプを記載します。</description>
+
+		<text>現状「xml」のみ対応です。</text>
+
+		<ref_element elementtype="xml">
+			<atribute_element link="xml_ref_element" define="element" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_attr_attributetype">
+		<title>elementtype 属性</title>
+		<description>エレメントタイプを記載します。</description>
+
+		<text>現状「xml」のみ対応です。</text>
+
+		<ref_element elementtype="xml">
+			<atribute_element link="xml_ref_element" define="element" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_attr_id">
+		<title>id 属性</title>
+		<description>アイテムのIDを記載します。</description>
+
+		<ref_element elementtype="xml">
+			<atribute_element link="xml_item" define="item" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_attr_make">
+		<title>make 属性</title>
+		<description>アイテムが編集中の場合「true」を記載します。</description>
+
+		<ref_element elementtype="xml">
+			<atribute_element link="xml_item" define="item" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_attr_termid">
+		<title>termid 属性</title>
+		<description>用語のIDを記載します。</description>
+
+		<ref_element elementtype="xml">
+			<atribute_element link="xml_term" define="term" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_attr_new">
+		<title>make 属性</title>
+		<description>アイテムが新規の場合「true」を記載します。</description>
+
+		<ref_element elementtype="xml">
+			<atribute_element link="xml_item" define="item" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_attr_deprecate" new="true">
+		<title>deprecate 属性</title>
+		<description>アイテムの情報が廃止の場合「true」を記載します。</description>
+
+		<ref_element elementtype="xml">
+			<atribute_element link="xml_item" define="item" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_attr_update" new="true">
+		<title>update 属性</title>
+		<description>アイテムの情報が更新の場合「true」を記載します。</description>
+
+		<ref_element elementtype="xml">
+			<atribute_element link="xml_item" define="item" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_attr_link">
+		<title>link 属性</title>
+		<description>用語のリンク先IDを記載します。</description>
+
+		<ref_element elementtype="xml">
+			<atribute_element link="xml_term" define="term" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_attr_type">
+		<title>type 属性</title>
+		<description>テキストのタイプを記載します。</description>
+
+		<ref_element elementtype="xml">
+			<atribute_element link="xml_text" define="text" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_attr_mark">
+		<title>mark 属性</title>
+		<description>テキストのマークを記載します。</description>
+
+		<ref_element elementtype="xml">
+			<atribute_element link="xml_text" define="text" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_attr_target">
+		<title>target 属性</title>
+		<description>リンクのターゲットを記載します。(_blank等)</description>
+
+		<ref_element elementtype="xml">
+			<atribute_element link="xml_url" define="url" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_attr_urltype">
+		<title>urltype 属性</title>
+		<description>URL表示タイプを記載します。指定無しはURL。titleはURLタイトルを表示</description>
+
+		<ref_element elementtype="xml">
+			<atribute_element link="xml_url" define="url" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_attr_number">
+		<title>number 属性</title>
+		<description>日付数表示タイプを記載します。</description>
+
+		<ref_element elementtype="xml">
+			<atribute_element link="xml_day" define="day" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_attr_right">
+		<title>right 属性</title>
+		<description>右側に表示します。</description>
+
+		<ref_element elementtype="xml">
+			<atribute_element link="xml_media" define="media" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_attr_offset">
+		<title>offset 属性</title>
+		<description>表示位置です。Bootstrapの場合最大値12です。</description>
+
+		<ref_element elementtype="xml">
+			<atribute_element link="xml_media" define="media" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_attr_column">
+		<title>column 属性</title>
+		<description>表示幅です。Bootstrapの場合最大値12です。</description>
+
+		<ref_element elementtype="xml">
+			<atribute_element link="xml_media" define="media" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="link">
+		<title>リンク</title>
+		<description>各リンク</description>
+
+		<site>
+			<title>Expert Software Inc.</title>
+			<url>http://www.expertsoftware-i.com/</url>
+		</site>
+
+		<newline />
+
+		<site>
+			<title>sXMLBook ホームページ</title>
+			<url>https://github.com/ksonohara/sxmlbook</url>
+		</site>
+	</item>
+	<!-- ================================================================================ -->
+	<item id="glossary">
+		<title>用語集</title>
+		<description>本ドキュメントに関係する用語集</description>
+
+		<termitem termid="xml">
+			<title>XML</title>
+			<text>Extensible Markup Language</text>
+		</termitem>
+	</item>
+</sxmlbook>
