@@ -7,13 +7,13 @@
 	<!-- ================================================================================ -->
 	<info>
 		<title>sXMLBook</title>
-		<description>Simple XML Book  Version 0.3.0_0 ドキュメント</description>
+		<description>Simple XML Book  Version 0.3.0_1 ドキュメント</description>
 		<release>$Id: sxmlbook.xml 102 2014-10-22 19:11:19Z expertsoftware.i@gmail.com $</release>
-		<date>2015/04/05</date>
+		<date>2015/04/12</date>
 		<company>Expert Software Inc.</company>
 		<homepage>http://www.expertsoftware-i.com/</homepage>
 		<copyright>Copyright (C) 2007-15 K.Sonohara All Right Reserved.</copyright>
-		<keywords>sxmlbook,xml,xslt</keywords>
+		<keywords>sxmlbook,xml,xslt,sxb</keywords>
 	</info>
 
 	<!-- ================================================================================ -->
@@ -28,7 +28,6 @@
 	<!-- ================================================================================ -->
 	<index name="introduction">
 		<index name="summary"/>
-		<index name="caseby"/>
 		<index name="spec"/>
 		<index name="license"/>
 	</index>
@@ -36,6 +35,7 @@
 	<index name="release">
 		<index name="download"/>
 		<index name="changelog">
+			<index name="changelog_0_3_0_1"/>
 			<index name="changelog_0_3_0_0"/>
 			<index name="changelog_0_2_1_5"/>
 			<index name="changelog_0_2_1_4"/>
@@ -52,7 +52,7 @@
 			<index name="changelog_0_0_1_0"/>
 			<index name="changelog_0_0_0_0"/>
 		</index>
-		<index name="bug"/>
+		<index name="issues"/>
 		<index name="add"/>
 	</index>
 
@@ -66,92 +66,92 @@
 	</index>
 
 	<index name="reference">
-		<index name="reference_xml">
-			<index name="reference_xml_element">
-				<index name="xml_account" />
-				<index name="xml_alert" />
-				<index name="xml_calender" />
-				<index name="xml_code" />
-				<index name="xml_column" />
-				<index name="xml_columns" />
-				<index name="xml_company" />
-				<index name="xml_copyright" />
-				<index name="xml_day" />
-				<index name="xml_days" />
-				<index name="xml_date" />
-				<index name="xml_description" />
-				<index name="xml_domain" />
-				<index name="xml_faq" />
-				<index name="xml_googlemap" />
-				<index name="xml_homepage" />
-				<index name="xml_id" />
-				<index name="xml_image" />
-				<index name="xml_index" />
-				<index name="xml_info" />
-				<index name="xml_icon" />
-				<index name="xml_item" />
-				<index name="xml_link" />
-				<index name="xml_links" />
-				<index name="xml_list" />
-				<index name="xml_height" />
-				<index name="xml_width" />
-				<index name="xml_map" />
-				<index name="xml_map" />
-				<index name="xml_mail" />
-				<index name="xml_media" />
-				<index name="xml_memo" />
-				<index name="xml_newline" />
-				<index name="xml_release" />
-				<!--index name="xml_ref_class" /-->
-				<index name="xml_ref_element" />
-				<index name="xml_element_child" />
-				<index name="xml_element_parent" />
-				<index name="xml_separator" />
-				<index name="xml_size" />
-				<index name="xml_site" />
-				<index name="xml_sxmlbook" />
-				<index name="xml_summary" />
-				<index name="xml_step" />
-				<index name="xml_table" />
-				<index name="xml_term" />
-				<index name="xml_termitem" />
-				<index name="xml_terms" />
-				<index name="xml_text" />
-				<index name="xml_thumbnail" />
-				<index name="xml_thumbnails" />
-				<index name="xml_title" />
-				<index name="xml_topic" />
-				<index name="xml_url" />
-				<index name="xml_value" />
-				<index name="xml_values" />
-				<index name="xml_warn" />
-				<index name="xml_panel" />
-			</index>
-			<index name="reference_xml_attribute">
-				<index name="xml_attr_child" />
-				<index name="xml_attr_version" />
-				<index name="xml_attr_elementtype" />
-				<index name="xml_attr_attributetype" />
-				<!--index name="xml_attr_classtype" /-->
-				<index name="xml_attr_id" />
-				<index name="xml_attr_lang" />
-				<index name="xml_attr_link" />
-				<index name="xml_attr_name" />
-				<index name="xml_attr_new" />
-				<index name="xml_attr_update" />
-				<index name="xml_attr_deprecate" />
-				<index name="xml_attr_make" />
-				<index name="xml_attr_mark" />
-				<index name="xml_attr_termid" />
-				<index name="xml_attr_urltype" />
-				<index name="xml_attr_type" />
-				<index name="xml_attr_target" />
-				<index name="xml_attr_number" />
-				<index name="xml_attr_right" />
-				<index name="xml_attr_offset" />
-				<index name="xml_attr_column" />
-				<index name="xml_attr_mode" />
-			</index>
+		<index name="reference_xml_element">
+			<index name="xml_account" />
+			<index name="xml_alert" />
+			<index name="xml_calender" />
+			<index name="xml_code" />
+			<index name="xml_column" />
+			<index name="xml_columns" />
+			<index name="xml_company" />
+			<index name="xml_copyright" />
+			<index name="xml_day" />
+			<index name="xml_days" />
+			<index name="xml_date" />
+			<index name="xml_description" />
+			<index name="xml_domain" />
+			<index name="xml_faq" />
+			<index name="xml_googlemap" />
+			<index name="xml_homepage" />
+			<index name="xml_id" />
+			<index name="xml_image" />
+			<index name="xml_index" />
+			<index name="xml_info" />
+			<index name="xml_icon" />
+			<index name="xml_item" />
+			<index name="xml_link" />
+			<index name="xml_links" />
+			<index name="xml_list" />
+			<index name="xml_height" />
+			<index name="xml_width" />
+			<index name="xml_map" />
+			<index name="xml_map" />
+			<index name="xml_mail" />
+			<index name="xml_media" />
+			<index name="xml_memo" />
+			<index name="xml_newline" />
+			<index name="xml_release" />
+			<!--index name="xml_ref_class" /-->
+			<index name="xml_ref_element" />
+			<index name="xml_element_child" />
+			<index name="xml_element_parent" />
+			<index name="xml_separator" />
+			<index name="xml_size" />
+			<index name="xml_site" />
+			<index name="xml_sxmlbook" />
+			<index name="xml_summary" />
+			<index name="xml_step" />
+			<index name="xml_table" />
+			<index name="xml_term" />
+			<index name="xml_termitem" />
+			<index name="xml_terms" />
+			<index name="xml_text" />
+			<index name="xml_thumbnail" />
+			<index name="xml_thumbnails" />
+			<index name="xml_title" />
+			<index name="xml_topic" />
+			<index name="xml_url" />
+			<index name="xml_value" />
+			<index name="xml_values" />
+			<index name="xml_warn" />
+			<index name="xml_webfont" />
+			<index name="xml_panel" />
+		</index>
+		<index name="reference_xml_attribute">
+			<index name="xml_attr_child" />
+			<index name="xml_attr_version" />
+			<index name="xml_attr_elementtype" />
+			<index name="xml_attr_attributetype" />
+			<!--index name="xml_attr_classtype" /-->
+			<index name="xml_attr_id" />
+			<index name="xml_attr_lang" />
+			<index name="xml_attr_link" />
+			<index name="xml_attr_name" />
+			<index name="xml_attr_new" />
+			<index name="xml_attr_update" />
+			<index name="xml_attr_deprecate" />
+			<index name="xml_attr_make" />
+			<index name="xml_attr_mark" />
+			<index name="xml_attr_termid" />
+			<index name="xml_attr_urltype" />
+			<index name="xml_attr_type" />
+			<index name="xml_attr_target" />
+			<index name="xml_attr_number" />
+			<index name="xml_attr_right" />
+			<index name="xml_attr_offset" />
+			<index name="xml_attr_column" />
+			<index name="xml_attr_mode" />
+			<index name="xml_attr_font" />
 		</index>
 
 		<index name="reference_xslt"/>
@@ -159,15 +159,16 @@
 		<index name="reference_xslt_params"/>
 	</index>
 
-
 	<index name="other">
 		<index name="link"/>
 		<index name="glossary"/>
 	</index>
+
 	<!-- ================================================================================ -->
 	<item id="introduction">
 		<title>イントロダクション</title>
 	</item>
+
 	<!-- ================================================================================ -->
 	<item id="summary">
 		<title>概要</title>
@@ -176,11 +177,13 @@
 		<text>複雑なHTMLなどリッチテキストを記載することなくリファレンスなどを容易に作成できます。</text>
 		<text>単純なXMLで構成されているためプログラムからの生成が容易で逆にプログラムへの組み込みも容易です。</text>
 	</item>
+
 	<!-- ================================================================================ -->
 	<item id="caseby">
 		<title>事例</title>
 		<text>なし</text>
 	</item>
+
 	<!-- ================================================================================ -->
 	<item id="spec">
 		<title>システム要件</title>
@@ -202,6 +205,7 @@
 			</values>
 		</table>
 	</item>
+
 	<!-- ================================================================================ -->
 	<item id="license">
 		<title>ライセンス</title>
@@ -214,6 +218,7 @@
 		<text mark="・">本アーカイブその物の販売及びそれに類する行為</text>
 		<memo>bin・examplesディレクトリ以下は個々のライセンスとなります。(ライセンス詳細は個々を参照。)</memo>
 	</item>
+
 	<!-- ================================================================================ -->
 	<item id="download">
 		<title>ダウンロード</title>
@@ -221,23 +226,30 @@
 
 		<site>
 			<title>ダウンロード</title>
-			<url>http://code.google.com/p/sxmlbook/</url>
+			<url>https://github.com/ksonohara/sxmlbook</url>
 		</site>
 	</item>
+
 	<!-- ================================================================================ -->
 	<item id="release">
 		<title>リリース情報</title>
 		<alert>本アプリケションはプロトタイプバージョンです。将来仕様・機能が大幅に変更される可能性があります。</alert>
 	</item>
+
 	<!-- ================================================================================ -->
 	<item id="changelog">
 		<title>変更履歴</title>
 	</item>
+
 	<!-- ================================================================================ -->
-	<item id="changelog_0_3_0_0" new="true">
+	<item id="changelog_0_3_0_1" new="true">
+		<title>Ver 0.3.0_1</title>
+		<text>WebFontエレメント追加</text>
+	</item>
+	<item id="changelog_0_3_0_0">
 		<title>Ver 0.3.0_0</title>
-		<text>オープンソース公開元をGoogle CodeからGitHubへ移設しました。</text>
-		<text>Bootstrapのみ対応となりました。</text>
+		<text>オープンソース公開元をGoogle CodeからGitHubへ移設</text>
+		<text>Bootstrapのみ対応</text>
 	</item>
 	<item id="changelog_0_2_1_5">
 		<title>Ver 0.2.1_5</title>
@@ -312,21 +324,31 @@
 		<title>Ver 0.0.0_0</title>
 		<text>新規リリース</text>
 	</item>
+
 	<!-- ================================================================================ -->
-	<item id="bug">
+	<item id="issues">
 		<title>不具合情報</title>
-		<text>特になし。（現在調査中）</text>
+		<description>不具合情報はGitHubにて管理しています。</description>
+
+		<site>
+			<webfont font="fa">github-square</webfont>
+			<title>sXMLBook GitHub Issues</title>
+			<url>https://github.com/ksonohara/sxmlbook/issues</url>
+		</site>
 	</item>
+
 	<!-- ================================================================================ -->
 	<item id="add">
 		<title>改修予定項目</title>
 		<text>特になし。（現在調整中）</text>
 	</item>
+
 	<!-- ================================================================================ -->
 	<item id="tutorial">
 		<title>チュートリアル</title>
 		<text>（作成中）</text>
 	</item>
+
 	<!-- ================================================================================ -->
 	<item id="function">
 		<title>機能ガイド</title>
@@ -334,10 +356,12 @@
 
 		<text>（作成中）</text>
 	</item>
+
 	<!-- ================================================================================ -->
 	<item id="reference">
 		<title>リファレンス</title>
 	</item>
+
 	<!-- ================================================================================ -->
 	<item id="reference_xml">
 		<title>sXMLBook XML リファレンス</title>
@@ -655,7 +679,6 @@
 			</code>
 		</ref_element>
 
-
 		<map>
 			<key name="キー">値</key>
 			<key name="key">value</key>
@@ -901,7 +924,7 @@
 			<code>
 &lt;image&gt;
 	&lt;title&gt;サンプル&lt;/title&gt;
-	&lt;url&gt;ajax-loader.gif&lt;/url&gt;
+	&lt;url&gt;loading.gif&lt;/url&gt;
 	&lt;size&gt;mini&lt;/size&gt;
 &lt;/image&gt;
 			</code>
@@ -909,7 +932,7 @@
 
 		<image>
 			<title>サンプル</title>
-			<url>ajax-loader.gif</url>
+			<url>loading.gif</url>
 			<size>mini</size>
 		</image>
 	</item>
@@ -941,13 +964,49 @@
 		<description>サイトURLを記載します。</description>
 
 		<ref_element elementtype="xml">
-			<element_child link="xml_title" define="title" />
-			<element_child link="xml_url" define="url" />
-			<element_child link="xml_text" define="text" />
+			<element_child type="?" link="xml_webfont" define="webfont" />
+			<element_child type="1" link="xml_title" define="title" />
+			<element_child type="?" link="xml_url" define="url" />
+			<element_child type="?" link="xml_text" define="text" />
 
 			<element_parent link="xml_item" define="item" />
 			<element_parent link="xml_summary" define="summary" />
+
+			<code>
+&lt;site&gt;
+&lt;webfont font="fa"&gt;github-square&lt;/webfont&gt;
+&lt;title>sXMLBook GitHub&lt;/title&gt;
+&lt;url>https://github.com/ksonohara/sxmlbook&lt;/url&gt;
+&lt;/site&gt;
+			</code>
 		</ref_element>
+
+		<site>
+			<webfont font="fa">github-square</webfont>
+			<title>sXMLBook GitHub</title>
+			<url>https://github.com/ksonohara/sxmlbook</url>
+		</site>
+	</item>
+
+	<!-- ================================================================================ -->
+	<item id="xml_webfont">
+		<title>webfont エレメント</title>
+		<description>WebFontを記載します。</description>
+
+		<ref_element elementtype="xml">
+			<element_node description="WebFont名" />
+
+			<element_attribute link="xml_attr_font" define="font" />
+
+			<element_parent link="xml_item" define="item" />
+			<element_parent link="xml_site" define="site" />
+
+			<code>
+&lt;webfont font="fa"&gt;github-square&lt;/webfont&gt;
+			</code>
+		</ref_element>
+
+		<webfont font="fa">github-square</webfont>
 	</item>
 
 	<!-- ================================================================================ -->
@@ -1039,17 +1098,17 @@
 	&lt;title&gt;サンプル&lt;/title&gt;
 	&lt;thumbnail&gt;
 		&lt;title&gt;サンプル1&lt;/title&gt;
-		&lt;url&gt;ajax-loader.gif&lt;/url&gt;
+		&lt;url&gt;loading.gif&lt;/url&gt;
 		&lt;size&gt;64&lt;/size&gt;
 	&lt;/thumbnail&gt;
 	&lt;thumbnail&gt;
 		&lt;title&gt;サンプル2&lt;/title&gt;
-		&lt;url&gt;ajax-loader.gif&lt;/url&gt;
+		&lt;url&gt;loading.gif&lt;/url&gt;
 		&lt;size&gt;64&lt;/size&gt;
 	&lt;/thumbnail&gt;
 	&lt;thumbnail&gt;
 		&lt;title&gt;サンプル3&lt;/title&gt;
-		&lt;url&gt;ajax-loader.gif&lt;/url&gt;
+		&lt;url&gt;loading.gif&lt;/url&gt;
 		&lt;size&gt;64&lt;/size&gt;
 	&lt;/thumbnail&gt;
 &lt;/thumbnails&gt;
@@ -1060,17 +1119,17 @@
 			<title>サンプル</title>
 			<thumbnail>
 				<title>サンプル1</title>
-				<url>ajax-loader.gif</url>
+				<url>loading.gif</url>
 				<size>64</size>
 			</thumbnail>
 			<thumbnail>
 				<title>サンプル2</title>
-				<url>ajax-loader.gif</url>
+				<url>loading.gif</url>
 				<size>64</size>
 			</thumbnail>
 			<thumbnail>
 				<title>サンプル3</title>
-				<url>ajax-loader.gif</url>
+				<url>loading.gif</url>
 				<size>64</size>
 			</thumbnail>
 		</thumbnails>
@@ -1092,7 +1151,7 @@
 			<code>
 &lt;panel&gt;
 	&lt;title&gt;サンプル&lt;/title&gt;
-	&lt;url&gt;ajax-loader.gif&lt;/url&gt;
+	&lt;url&gt;loading.gif&lt;/url&gt;
 	&lt;text&gt;メモ&lt;/text&gt;
 &lt;/panel&gt;
 			</code>
@@ -1100,25 +1159,25 @@
 
 		<panel column="3" clazz="text-center">
 			<title>サンプル</title>
-			<url>ajax-loader.gif</url>
+			<url>loading.gif</url>
 			<text>メモ</text>
 		</panel>
 
 		<panel column="3" clazz="text-center">
 			<title>サンプル</title>
-			<url>ajax-loader.gif</url>
+			<url>loading.gif</url>
 			<text>メモ</text>
 		</panel>
 
 		<panel column="3" clazz="text-center">
 			<title>サンプル</title>
-			<url>ajax-loader.gif</url>
+			<url>loading.gif</url>
 			<text>メモ</text>
 		</panel>
 
 		<panel column="3" clazz="text-center">
 			<title>サンプル</title>
-			<url>ajax-loader.gif</url>
+			<url>loading.gif</url>
 			<text>メモ</text>
 		</panel>
 	</item>
@@ -1141,7 +1200,7 @@
 			<code>
 &lt;step&gt;
 	&lt;title&gt;サンプル&lt;/title&gt;
-	&lt;url&gt;ajax-loader.gif&lt;/url&gt;
+	&lt;url&gt;loading.gif&lt;/url&gt;
 	&lt;value&gt;手順&lt;/value&gt;
 	&lt;value&gt;手順&lt;/value&gt;
 	&lt;text&gt;メモ&lt;/text&gt;
@@ -1151,7 +1210,7 @@
 
 		<step>
 			<title>サンプル</title>
-			<url>ajax-loader.gif</url>
+			<url>loading.gif</url>
 			<value>手順</value>
 			<value>手順</value>
 			<text>メモ</text>
@@ -1175,14 +1234,14 @@
 			<code>
 &lt;media right="true"&gt;
 	&lt;title&gt;サンプル&lt;/title&gt;
-	&lt;url&gt;ajax-loader.gif&lt;/url&gt;
+	&lt;url&gt;loading.gif&lt;/url&gt;
 	&lt;value&gt;手順&lt;/value&gt;
 	&lt;value&gt;手順&lt;/value&gt;
 	&lt;text&gt;メモ&lt;/text&gt;
 &lt;/media&gt;
 &lt;media&gt;
 	&lt;title&gt;サンプル&lt;/title&gt;
-	&lt;url&gt;ajax-loader.gif&lt;/url&gt;
+	&lt;url&gt;loading.gif&lt;/url&gt;
 	&lt;value&gt;手順&lt;/value&gt;
 	&lt;value&gt;手順&lt;/value&gt;
 	&lt;text&gt;メモ&lt;/text&gt;
@@ -1192,7 +1251,7 @@
 
 		<media right="true">
 			<title>サンプル</title>
-			<url>ajax-loader.gif</url>
+			<url>loading.gif</url>
 			<value>手順</value>
 			<value>手順</value>
 			<text>メモ</text>
@@ -1200,7 +1259,7 @@
 
 		<media>
 			<title>サンプル</title>
-			<url>ajax-loader.gif</url>
+			<url>loading.gif</url>
 			<value>手順</value>
 			<value>手順</value>
 			<text>メモ</text>
@@ -1214,6 +1273,7 @@
 
 		<ref_element elementtype="xml">
 			<element_child link="xml_thumbnail" define="thumbnail" />
+
 			<element_parent link="xml_item" define="item" />
 			<element_parent link="xml_summary" define="summary" />
 		</ref_element>
@@ -1227,6 +1287,7 @@
 		<ref_element elementtype="xml">
 			<element_child link="xml_title" define="title" />
 			<element_child link="xml_text" define="text" />
+
 			<element_parent link="xml_item" define="item" />
 			<element_parent link="xml_summary" define="summary" />
 		</ref_element>
@@ -1538,7 +1599,7 @@
 			&lt;values&gt;
 				&lt;value&gt;
 					&lt;image&gt;
-						&lt;url&gt;ajax-loader.gif&lt;/url&gt;
+						&lt;url&gt;loading.gif&lt;/url&gt;
 						&lt;size&gt;mini&lt;/size&gt;
 					&lt;/image&gt;
 				&lt;/value&gt;
@@ -1566,7 +1627,7 @@
 			<values>
 				<value>
 					<image>
-						<url>ajax-loader.gif</url>
+						<url>loading.gif</url>
 						<size>mini</size>
 					</image>
 				</value>
@@ -1876,6 +1937,16 @@
 	</item>
 
 	<!-- ================================================================================ -->
+	<item id="xml_attr_font">
+		<title>font 属性</title>
+		<description>WebFontの種類を指定します。現在[glyphicon(デフォルト),fa]が指定可能です。</description>
+
+		<ref_element elementtype="xml">
+			<atribute_element link="xml_webfont" define="webfont" />
+		</ref_element>
+	</item>
+
+	<!-- ================================================================================ -->
 	<item id="link">
 		<title>リンク</title>
 		<description>各リンク</description>
@@ -1889,6 +1960,14 @@
 
 		<site>
 			<title>sXMLBook ホームページ</title>
+			<url>http://www.expertsoftware-i.com/product/sxmlbook.php</url>
+		</site>
+
+		<newline />
+
+		<site>
+			<webfont font="fa">github-square</webfont>
+			<title>sXMLBook GitHub</title>
 			<url>https://github.com/ksonohara/sxmlbook</url>
 		</site>
 	</item>
