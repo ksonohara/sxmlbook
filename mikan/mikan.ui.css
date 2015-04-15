@@ -54,3 +54,9 @@ div.col-xs-3 a img {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+div > a > img {
+	max-width: 98%;
+}
+div > img {
+	max-width: 98%;
+}
