@@ -102,10 +102,6 @@ mikan.page.showbook = function(id) {
 	}
 
 	mikan.page.book.current = id;
-	try {
-		mikan.page.setfooterid();
-	} catch(e) {
-	}
 };
 mikan.page.load_sidemenu = function() {
 	try {
@@ -113,6 +109,7 @@ mikan.page.load_sidemenu = function() {
 			toggle: true
 		});
 	} catch(e) {
+		mikan.log(e);
 	}
 
 	mikan.page.load_resize();
@@ -136,7 +133,7 @@ mikan.page.load_resize = function() {
 			$("#page-wrapper").css("min-height", (height) + "px");
 		}
 	} catch(e) {
-mikan.log(e);
+		mikan.log(e);
 	}
 };
 

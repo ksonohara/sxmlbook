@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <?xml-stylesheet href="xslt/bootstrap/sxmlbook.xsl" type="text/xsl" ?>
 
-<!--DOCTYPE sxmlbook SYSTEM "sxmlbook.dtd"-->
-
 <sxmlbook version="0.0" lang="ja">
 	<!-- ================================================================================ -->
 	<info>
 		<title>sXMLBook</title>
 		<description>Simple XML Book  Version 0.3.0_1 ドキュメント</description>
 		<release>$Id: sxmlbook.xml 102 2014-10-22 19:11:19Z expertsoftware.i@gmail.com $</release>
-		<date>2015/04/12</date>
+		<date>2015/04/18</date>
 		<company>Expert Software Inc.</company>
 		<homepage>http://www.expertsoftware-i.com/</homepage>
 		<copyright>Copyright (C) 2007-15 K.Sonohara All Right Reserved.</copyright>
-		<keywords>sxmlbook,xml,xslt,sxb</keywords>
+		<keywords>sxmlbook,xml,xslt,sxb,html</keywords>
 	</info>
 
 	<!-- ================================================================================ -->
@@ -21,13 +19,16 @@
 		<title>sXMLBook 概要</title>
 		<description>sXMLBookとはXMLベースのドキュメントシステムです。</description>
 
-		<text>複雑なHTMLなどリッチテキストを記載することなくリファレンスなどを容易に作成できます。</text>
-		<text>単純なXMLで構成されているためプログラムからの生成・プログラムへの組み込みも容易です。</text>
+		<text>文書書式・デザインと文書データを分離することにより様々なシーンへ柔軟に対応するドキュメントシステムです。</text>
+		<text>複数のデバイス・デザイン・書式を柔軟に対応し文書データ作成者は文書データに、デザインはデザイナーが集中して作業することが可能です。</text>
+		<image>
+			<title>システムイメージ</title>
+			<url>summary.png</url>
+		</image>
 	</summary>
 
 	<!-- ================================================================================ -->
 	<index name="introduction">
-		<index name="summary"/>
 		<index name="spec"/>
 		<index name="license"/>
 	</index>
@@ -53,7 +54,6 @@
 			<index name="changelog_0_0_0_0"/>
 		</index>
 		<index name="issues"/>
-		<index name="add"/>
 	</index>
 
 	<index name="function">
@@ -170,15 +170,6 @@
 	</item>
 
 	<!-- ================================================================================ -->
-	<item id="summary">
-		<title>概要</title>
-		<description>sXMLBookとはXMLベースのドキュメントシステムです。</description>
-
-		<text>複雑なHTMLなどリッチテキストを記載することなくリファレンスなどを容易に作成できます。</text>
-		<text>単純なXMLで構成されているためプログラムからの生成が容易で逆にプログラムへの組み込みも容易です。</text>
-	</item>
-
-	<!-- ================================================================================ -->
 	<item id="caseby">
 		<title>事例</title>
 		<text>なし</text>
@@ -209,14 +200,8 @@
 	<!-- ================================================================================ -->
 	<item id="license">
 		<title>ライセンス</title>
-		<text>本システムは商用・非商用問わずフリーウェアとします。</text>
-		<text mark="○">許諾事項</text>
-		<text mark="・">アーカイブ全体の再配布及びsxmlbook.dtd単体を自著作権物へ添付しての再配布</text>
-		<text mark="・">適切なライセンス下で動作するプログラム及びソフトウェアからの利用</text>
-		<text mark="○">禁止事項</text>
-		<text mark="・">改変その他著作権を侵害する行為</text>
-		<text mark="・">本アーカイブその物の販売及びそれに類する行為</text>
-		<memo>bin・examplesディレクトリ以下は個々のライセンスとなります。(ライセンス詳細は個々を参照。)</memo>
+		<text>Copyright (C) 2007-15 K.Sonohara All Right Reserved.</text>
+		<text>Code released under [Mozilla Public License, version 2.0]</text>
 	</item>
 
 	<!-- ================================================================================ -->
@@ -225,7 +210,8 @@
 		<description>ダウンロード</description>
 
 		<site>
-			<title>ダウンロード</title>
+			<webfont font="fa">github-square</webfont>
+			<title>sXMLBook GitHub</title>
 			<url>https://github.com/ksonohara/sxmlbook</url>
 		</site>
 	</item>
@@ -327,20 +313,14 @@
 
 	<!-- ================================================================================ -->
 	<item id="issues">
-		<title>不具合情報</title>
-		<description>不具合情報はGitHubにて管理しています。</description>
+		<title>不具合・改修情報</title>
+		<description>不具合・改修情報はGitHubにて管理しています。</description>
 
 		<site>
 			<webfont font="fa">github-square</webfont>
 			<title>sXMLBook GitHub Issues</title>
 			<url>https://github.com/ksonohara/sxmlbook/issues</url>
 		</site>
-	</item>
-
-	<!-- ================================================================================ -->
-	<item id="add">
-		<title>改修予定項目</title>
-		<text>特になし。（現在調整中）</text>
 	</item>
 
 	<!-- ================================================================================ -->
