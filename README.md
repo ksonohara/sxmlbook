@@ -24,9 +24,9 @@ Now making...
 
 ##Copyright and license
 Copyright 1997-2015 K.Sonohara.
-- Code released under [Mozilla Public License, version 2.0](https://github.com/ksonohara/sxmlbook/blob/master/LICENSE)
+- Code released under[Mozilla Public License, version 2.0](https://github.com/ksonohara/sxmlbook/blob/master/LICENSE)
 
 ##Author
 K.Sonohara
 - GitHub: https://github.com/ksonohara
-- Homepage: http://www.expertsoftware-i.com/
+- Homepage: https://www.e-software.company/
